@@ -1,0 +1,49 @@
+// LIN Description File 
+LIN_description_file;
+LIN_protocol_version = "2.1" ;
+LIN_language_version = "2.1" ;
+LIN_speed = 19.2 kbps ;
+
+Nodes{	Slaves:  ;
+}
+
+Signals{
+	Vehicle_Speed: 8, 0, MasterECU, Slave ;
+	BrakeStatus: 8, 0, Slave, MasterECU ;
+}
+
+Frames{
+	Frame1: 3, MasterECU, 4{
+		Vehicle_Speed, 0;
+	}
+	Frame2: 4, Slave, 4{
+		BrakeStatus, 0;
+	}
+}
+
+
+
+
+Node_attributes {
+	Slave{
+		LIN_protocol = "2.1" ;
+		configured_NAD = 0x1 ;
+		initial_NAD = 0x1 ;
+		product_id = 0x0, 0x0, 0x28 ;
+		P2_min = 50 ms ;
+		ST_min = 0 ms ;
+		N_As_timeout = 1000 ms ;
+		N_Cr_timeout = 1000 ms ;
+		configurable_frames{
+			Frame1 ;
+			Frame2 ;
+		}
+	}
+}
+
+Schedule_tables {
+ NormalTable{
+	Frame1 delay 50 ms ;
+	Frame2 delay 10 ms ;
+ }
+}
