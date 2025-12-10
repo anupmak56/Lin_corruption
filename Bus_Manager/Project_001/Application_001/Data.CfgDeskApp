@@ -1,0 +1,41 @@
+[
+   {
+      "Key": "MetaData",
+      "Value": [
+         {
+            "Key": "ApplicationIdentifier",
+            "Value": "53812cb3c2a442e4ac6978f2438db9a1"
+         },
+         {
+            "Key": "AccessIdentifier",
+            "Value": "5944f7cbddb448f5a08d6e635745d0a0"
+         },
+         {
+            "Key": "ApplicationAuthor",
+            "Value": "kpit_user2"
+         },
+         {
+            "Key": "ApplicationCreatedVersion",
+            "Value": "24.1"
+         },
+         {
+            "Key": "TopologyState",
+            "ValueCollection": [
+               "CommunicationMatrices"
+            ]
+         },
+         {
+            "Key": "ApplicationModifiedTimeStamp",
+            "Value": "639008629518629618"
+         },
+         {
+            "Key": "ApplicationModifiedVersion",
+            "Value": "24.1"
+         },
+         {
+            "Key": "ProjectManager",
+            "Value": "v3"
+         }
+      ]
+   }
+]
